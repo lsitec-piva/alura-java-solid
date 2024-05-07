@@ -1,10 +1,7 @@
 package br.com.alura.rh.model;
 
 import java.math.BigDecimal;
-import java.math.RoundingMode;
 import java.time.LocalDate;
-
-import br.com.alura.rh.ValidacaoException;
 
 public class Funcionario {
 
@@ -28,21 +25,17 @@ public class Funcionario {
 		return dadosPessoais.getNome();
 	}
 
-
 	public String getCpf() {
 		return dadosPessoais.getCpf();
 	}
-
 
 	public Cargo getCargo() {
 		return dadosPessoais.getCargo();
 	}
 
-
 	public BigDecimal getSalario() {
 		return dadosPessoais.getSalario();
 	}
-
 
 	public LocalDate getDataUltimoReajuste() {
 		return dataUltimoReajuste;
